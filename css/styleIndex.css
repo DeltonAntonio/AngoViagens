@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+   
+}
+  
+::selection {
+    color: #fcfcfc;
+    background: var(--color-btnPrimaryHover);
+}
+  
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lucida Sans',  sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --color-primary: #ffffff;
+    --color-link: #808080;
+    --color-linkHover: #a9a9a9;
+    --color-logo: #ffa500;
+    --color-btnPrimary: #ffa500;
+    --color-btnPrimaryHover: #ff8c00;
+    --color-secondarySection: rgba(0, 0, 0, 0.04);
+}
+a{
+    color: var(--color-link);
+    text-decoration: none;
+}
+.logo{
+    font-size: 1.6rem;
+    font-family:'Arial';
+    color: var(--color-logo) !important;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.span{
+    color: rgb(212, 211, 211);    
+}
+header{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px rgb(221, 220, 220);
+}
+.nav{
+    margin-top: 10px;
+    padding: 10px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}   
+.nav ul li .link {
+    color: var(--color-link);
+    padding: 10px;
+    font-weight: 600;
+}
+.nav ul li .link:hover{
+    color: var(--color-linkHover);
+}
+.link:focus{
+    color: var(--color-linkHover);
+}
+.btn{
+    padding: 5px 22px;
+    border-radius: 20px;
+    color: var(--color-primary);
+    background-color: var(--color-btnPrimaryHover);
+    transition: all 300ms ease-out;
+}
+.btn:hover{
+    background-color: var(--color-btnPrimary);
+}
+
+#main{
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+}
+.container-content{
+    width: 40%;
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.container-banner{
+    margin: 30px;
+    width: 60%;
+}
+.title-banner{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Georgia, serif ;
+}
+.title, .title-1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.container-banner img{
+    width: 100%;
+}
+#expection{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(251, 155, 38);
+    height: 800px;
+    color: var(--color-primary);
+}
+.container-expection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%; 
+    justify-content: center; 
+}
+
+.btn-banner{
+    margin-top: 30px;
+}
+.container-good{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-item{
+    margin: 20px;
+    padding: 20px;
+    width: 350px; 
+    box-shadow:0px 0px 10px  #F78536;
+}
+.item-title{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.item-text{
+    text-align: center;
+}
+#travel{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-secondarySection);
+    height: 800px;
+}
+.container-travel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: #5a5a5a;
+}
+.text, .text-1{
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+.text{
+    color: #848484;
+    margin-bottom: 10px;
+}
+.container-travelled{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    margin: 20px;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 5px rgb(231, 231, 231);
+    padding: 10px;
+    border-radius: 10px;
+}
+.card img{
+    z-index: 0;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+}
+.text-2{
+    position: relative;
+    top: -100px;
+    right: -110px;
+    font-weight: 900;
+    color: var(--color-primary);
+    font-family: Arial;
+}
+#hotel{
+    width: 100%;
+    padding: 20px;
+    height: 800px;
+}
+.container-hotel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.container-quantity{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-2{
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+}
+.title-2{
+    color: #F78536;
+    font-size: 3rem;
+    font-family: 'Segoe UI',sans-serif; 
+}
+.title-3{
+    color: #808080;
+    font-size: 2rem;
+    font-family: Arial;
+}
+#turism{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-secondarySection);
+    height: 800px;
+}
+.container-turism{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-turner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-2{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+}
+.card-2 img{
+    width: 100%;
+}
+.text-4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #808080;
+    
+}
+.footer{
+    padding: 30px;
+    background-color: #393e46;
+    text-align: center;
+}
+.footer p{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.container-social{
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.container-social img{
+    width: 38px;
+}
+.menu-icon{
+    display: none;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.menu-icon img{
+    width: 100%;
+}
+.menu-icon:hover{
+    cursor: pointer;
+    background-color: rgb(240, 239, 239);
+}
+@media (max-width:1150px){
+    #expection, #travel, #hotel, #turism{
+        overflow: hidden;
+    }   
+}
+@media (max-width:1090px){
+    .menu-icon{
+        display: block;
+       
+    }
+   
+    nav{
+        display: none;
+    }
+}
+@media (max-width:1060px){
+    #expection, #travel, #hotel, #turism{
+        height: 900px;
+    }
+}
+@media (max-width:1000px){
+    #main{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1000px;
+    }   
+    .container-banner{
+        width: 100%;
+    }
+}
+
+@media (max-width:890px) {
+  
+    .title, .text{
+        text-align: center;
+    }
+    
+    #expection, #travel, #hotel, #turism{
+        overflow: hidden;
+        height: 1500px;
+    }   
+}
+@media (max-width:709px){
+
+    #expection, #travel, #hotel, #turism{
+        height: 1700px;
+    }   
+    
+}

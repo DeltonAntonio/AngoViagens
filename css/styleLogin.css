@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+:root{
+    --color-primary:#ffa600e2;
+    --color-secondary: #ffff;
+    --color-title:orange;
+    --color-secondarySection: rgba(0, 0, 0, 0.04);
+}
+a{
+    text-decoration: none;  
+}
+.container-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondarySection);
+}
+.image{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.container-form{
+    padding: 30px;
+    width: 400px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(210, 210, 210) ;
+    border-radius: 10px;
+}
+.title-login{
+    color: var(--color-title);
+    font-size: 2rem;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 300;
+}
+.container-email img, .container-password img{
+    width: 30px;
+    cursor: pointer;
+}
+.container-email, .container-password{
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding-bottom: 5px;
+}
+.input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-size: Arial;
+    color: gray;
+}
+.btn-entrar{
+    margin-top: 20px;
+    background-color: #fdaf1e;
+    padding: 6px 25px;
+    border-radius: 20px;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    transition: all 500ms;
+}
+.btn-entrar:hover{
+    background-color: #fda501;
+}
+.btn-register{
+    color: gray;
+}
+.container-box{
+    display: flex;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px 10px rgb(210, 210, 210) ;
+}
+.container-form-2{
+    border-radius: 10px 0px 0px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.input-file{
+    align-self: flex-start;
+    cursor: pointer;
+    color: var(--color-secondary);
+    background-image: url(../icons/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(179, 178, 178);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container-sexo{
+    align-self: flex-start;
+    font-weight: 100;
+    padding: 10px;
+}
+.radio-text {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+.input-2{
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.container-info img{
+    width: 200px;
+}
+.container-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 202, 105);
+    border-radius: 0px 10px 10px 0px;
+}
+.title-login2{
+    margin: 30px;
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 300;
+}
+.btn-entrar2{
+    padding: 6px 20px;
+    border: 1px solid var(--color-secondary);
+    color: white;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+.btn-entrar2:hover{
+    background-color: var(--color-secondary);
+    color: black;
+}
+.btn-criar{
+    padding: 8px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 500ms ease;
+}
+.btn-criar:hover{
+    background-color: orange;
+}
+@media (max-width:1000px){
+    .container-box{
+        flex-direction: column-reverse;
+    }
+    .container-info{
+        flex-direction: column;
+        padding-top: 100px;
+        width: 100%;
+        height: 600px;
+    }
+    .container-form-2{
+        width: 100%;
+    }
+}
+@media (orientation: landscape) and (max-width: 935px){
+    .container-main{
+        height: 150vh;
+    }
+}
+@media (orientation: landscape) and (max-width: 860px){
+    .container-main{
+        height: 150vh;
+    }
+}
+@media (orientation: landscape) and (max-width: 760px){
+    .container-main{
+        height: 120vh;
+    }
+}
+
+@media (max-width:630px) {
+    .container-info img{
+        width: 30%;
+    }
+    .container-form{
+        width: 350px;
+       
+    }   
+}
+@media (max-width:400px) {
+    .container-form{
+        width: 300px;
+    }   
+}
+@media (max-width:300px) {
+    .container-form{
+        width: 330px;
+    }   
+}
